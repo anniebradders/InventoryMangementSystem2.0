@@ -1,0 +1,7 @@
+.round{
+ 	-fx-background-size: 1200 900;
+	-fx-background-radius: 30;
+	-fx-border-radius: 30;
+	-fx-border-width:5;
+	position: center;
+}

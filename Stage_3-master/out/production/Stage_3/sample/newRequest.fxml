@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.newRequestController">
+   <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Pane layoutX="-1.0" prefHeight="773.0" prefWidth="321.0" style="-fx-background-color: #16AA83;">
+               <children>
+                  <Button fx:id="home" layoutX="-2.0" layoutY="276.0" mnemonicParsing="false" onAction="#homeOnAction" prefHeight="58.0" prefWidth="322.0" style="-fx-background-color: #16AA83;" text="HOME" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="newRequest" layoutX="-2.0" layoutY="334.0" mnemonicParsing="false" onAction="#newRequestOnAction" prefHeight="58.0" prefWidth="322.0" style="-fx-background-color: #16AA83;" text="NEW REQUEST" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logout" layoutX="-2.0" layoutY="392.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="58.0" prefWidth="322.0" style="-fx-background-color: #16AA83;" text="LOGOUT" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Line endX="221.0" layoutX="99.0" layoutY="276.0" startX="-100.0" stroke="WHITE" />
+                  <Line endX="221.0" layoutX="99.0" layoutY="333.0" startX="-100.0" stroke="WHITE" />
+                  <Line endX="221.0" layoutX="98.0" layoutY="394.0" startX="-100.0" stroke="WHITE" />
+                  <Line endX="221.0" layoutX="98.0" layoutY="447.0" startX="-100.0" stroke="WHITE" />
+               </children>
+            </Pane>
+            <Text layoutX="534.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEW REQUEST">
+               <font>
+                  <Font size="86.0" />
+               </font>
+            </Text>
+            <Text layoutX="426.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type of Issue:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <MenuButton layoutX="600.0" layoutY="178.0" mnemonicParsing="false" text="Select Issue">
+              <items>
+                <MenuItem fx:id="hardware" mnemonicParsing="false" onAction="#hardwareOnAction" text="Hardware" />
+                <MenuItem fx:id="software" mnemonicParsing="false" onAction="#softwareOnAction" text="Software" />
+                  <MenuItem fx:id="comm" mnemonicParsing="false" onAction="#commOnAction" text="Communication" />
+                  <MenuItem fx:id="general" mnemonicParsing="false" onAction="#generalOnAction" text="General" />
+                  <MenuItem fx:id="security" mnemonicParsing="false" onAction="#secOnAction" text="Security" />
+                  <MenuItem fx:id="other" mnemonicParsing="false" text="Other" />
+              </items>
+            </MenuButton>
+            <Text layoutX="426.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="details" layoutX="600.0" layoutY="242.0" prefHeight="160.0" prefWidth="505.0" />
+            <Text layoutX="426.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="lol" layoutX="600.0" layoutY="434.0" prefHeight="31.0" prefWidth="506.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="newReq" layoutX="415.0" layoutY="603.0" mnemonicParsing="false" onAction="#newReqOnAction" style="-fx-background-color: #d7d7d7;" text="Submit Request" />
+      <Text layoutX="425.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Severity:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <MenuButton layoutX="580.0" layoutY="514.0" mnemonicParsing="false" text="Select Severity">
+         <items>
+            <MenuItem fx:id="critical" mnemonicParsing="false" onAction="#criticalOnAction" text="Critical Incident" />
+            <MenuItem fx:id="high" mnemonicParsing="false" onAction="#highOnAction" text="High Incident" />
+            <MenuItem fx:id="medium" mnemonicParsing="false" onAction="#medOnAction" text="Medium Incident" />
+            <MenuItem fx:id="low" mnemonicParsing="false" onAction="#lowOnAction" text="Low Incident" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

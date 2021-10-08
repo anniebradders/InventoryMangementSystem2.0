@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="sample.Controller" accessibleHelp=""   maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Pane layoutX="-1.0" prefHeight="800.0" prefWidth="640.0" style="-fx-background-color: #16AA83;">
+               <children>
+                  <Pane layoutX="86.0" layoutY="141.0" prefHeight="421.0" prefWidth="449.0" style="-fx-background-color: white;" styleClass="round" stylesheets="/sample/round.css">
+                     <children>
+                        <Text layoutX="162.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOG IN">
+                           <font>
+                              <Font name="HoloLens MDL2 Assets" size="37.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="username" layoutX="59.0" layoutY="141.0" prefHeight="44.0" prefWidth="323.0" />
+                        <Text layoutX="59.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME:">
+                           <font>
+                              <Font name="HoloLens MDL2 Assets" size="18.0" />
+                           </font>
+                        </Text>
+                        <PasswordField fx:id="password" layoutX="59.0" layoutY="242.0" prefHeight="43.0" prefWidth="322.0" />
+                        <Text layoutX="59.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD:">
+                           <font>
+                              <Font name="HoloLens MDL2 Assets" size="18.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="login" layoutX="163.0" layoutY="331.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="37.0" prefWidth="115.0" style="-fx-background-color: #d7d7d7;" text="LOGIN">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="77.0" layoutY="179.0" prefHeight="25.0" prefWidth="201.0" textFill="RED" />
+                        <Label fx:id="numAttempt" alignment="CENTER" layoutX="70.0" layoutY="204.0" prefHeight="17.0" prefWidth="219.0" textFill="RED" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <ImageView fitHeight="411.0" fitWidth="414.0" layoutX="760.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/sample/kissclipart-financial-icon-clipart-finance-computer-icons-acco-283f6055746f9e88.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+  </children>
+</AnchorPane>
